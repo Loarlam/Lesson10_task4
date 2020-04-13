@@ -59,6 +59,8 @@ namespace Taks4
 
             //Расширяющий метод GetArray, который использует свойство TotalNumberOfElements экземпляра класса instance, и возвращает массив элементов
             array = instance.GetArray<int>();
+            //Аналогичный рабочий вариант:
+            //array = ExtensionClass.GetArray<int>(instance);
 
             Console.WriteLine("\nВывод значений массива расширяющим методом GetArray:");
             for (int i = 0; i < array.Length; i++)
